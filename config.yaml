@@ -1,0 +1,21 @@
+data:
+  file_path: "data/Pashtu Text Sentiment Analysis Dataset.xlsx"
+  sheet_name: "Sheet1"
+  text_col: "Text"
+  label_col: "label"
+
+model:
+  name: "bert-base-multilingual-cased"
+  num_labels: 5
+  max_length: 128
+
+training:
+  batch_size: 16
+  epochs: 4
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  save_best: true
+  output_dir: "outputs/models"
+
+evaluation:
+  metrics: ["accuracy", "f1_weighted"]

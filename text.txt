@@ -1,0 +1,30 @@
+Pashtu-Sentiment-Analysis/
+│
+├── README.md
+├── requirements.txt
+├── config.yaml
+├── data/
+│   └── Pashtu Text Sentiment Analysis Dataset.xlsx   # ← YOUR FILE HERE
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate.py
+│   └── predict.py
+│
+├── notebooks/
+│   └── 01_Exploratory_Data_Analysis.ipynb
+│
+├── outputs/
+│   ├── models/
+│   │   └── best_model.pt
+│   └── results/
+│       └── evaluation_report.txt
+│
+├── utils/
+│   ├── __init__.py
+│   └── helpers.py
+│
+└── .gitignore
